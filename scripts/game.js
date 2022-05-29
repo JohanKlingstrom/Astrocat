@@ -1,7 +1,7 @@
 import backgroundSpace from "../assets/stars.jpeg";
 import platform from "../assets/platform2.png";
 import playerSheet from "../assets/sheet.png";
-import lavaPool from "../assets/spacelava.png";
+import lavaPool from "../assets/lava.png";
 import bgMusic from "url:../assets/rainbowtylenol.mp3";
 import jump from "url:../assets/jump.mp3";
 import impact from "url:../assets/impact.mp3";
@@ -180,7 +180,7 @@ export default class Game extends Phaser.Scene {
       this.add
         .text(300, 325, "Your score is: " + playerScore, {
           fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif',
-          color: "#00FF00",
+          color: "#FFFFFF",
           fontSize: "50px",
         })
         .setOrigin(0.5)
@@ -189,7 +189,7 @@ export default class Game extends Phaser.Scene {
       this.add
         .text(300, 325, "Click to play again", {
           fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif',
-          color: "#00FF00",
+          color: "#FFFFFF",
           fontSize: "30px",
         })
         .setOrigin(0.5, -2)
@@ -249,7 +249,7 @@ export default class Game extends Phaser.Scene {
       this.add
         .text(300, 325, "Your score is: " + playerScore, {
           fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif',
-          color: "#00FF00",
+          color: "#FFFFFF",
           fontSize: "50px",
         })
         .setOrigin(0.5)
@@ -258,7 +258,7 @@ export default class Game extends Phaser.Scene {
       this.add
         .text(300, 325, "Click to play again", {
           fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif',
-          color: "#00FF00",
+          color: "#FFFFFF",
           fontSize: "30px",
         })
         .setOrigin(0.5, -2)
@@ -277,8 +277,8 @@ export default class Game extends Phaser.Scene {
     // Display live score
     showScore = this.add
       .text(50, 50, playerScore, {
-        fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif',
-        color: "#00FF00",
+        fontFamily: 'Roboto, Arial, "Goudy Bookletter 1911", Times, serif',
+        color: "#FFFFFF",
         fontSize: "45px",
       })
       .setOrigin(0.5)

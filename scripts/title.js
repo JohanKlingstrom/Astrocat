@@ -1,6 +1,5 @@
 import backgroundSpace from "../assets/stars.jpeg";
 import Logo from "../assets/ASLogo.png";
-import startTheme from "url:../assets/whogivesafuck.mp3";
 import playerSheet from "../assets/sheet.png";
 import keys from "../assets/keyboard.png";
 
@@ -21,8 +20,6 @@ export default class Title extends Phaser.Scene {
     });
 
     this.load.image("logo", Logo);
-
-    this.load.audio("theme", startTheme);
 
     this.load.image("keys", keys);
   }
@@ -83,28 +80,12 @@ export default class Title extends Phaser.Scene {
 
     //    this.add.text(positions.centerX, positions.centerY, 'AstroCat!').setOrigin(0.5, 0.5), { fontSize: "20px"} ;
 
-    const lore = this.add
-      .text(
-        45,
-        300,
-        "On the 18th of October in 1963 a stray Parisian cat named Félicette,\n as a part of the French space program, was successfully launched into space\n and thereby became the first (and only!) cat to reach the stars.\n Join her on her outer space odyssey, but watch out for the space lava!",
-        {
-          fontFamily: "Arial",
-          fill: "#FFFFFF",
-          fontSize: 15,
-          color: "#FFFFFF",
-          align: "center",
-        }
-      )
-      .setFontStyle("italic")
-      .setDepth(10);
-
     const startGameButton = this.add
-      .text(positions.centerX, positions.centerY + 100, "Start Game!", {
+      .text(positions.centerX, positions.centerY + 50, "CLICK TO START", {
         fontFamily: "Arial",
-        fill: "#00ff00",
+        fill: "#ffffff",
         fontSize: 50,
-        color: "#00ff00",
+        color: "#ffffff",
       })
       .setOrigin(0.5);
     startGameButton.setInteractive({ useHandCursor: true });
